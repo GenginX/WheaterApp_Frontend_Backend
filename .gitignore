@@ -1,0 +1,53 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+**/dist
+**/tmp
+**/out-tsc
+# Only exists if Bazel was run
+**/bazel-out
+
+# dependencies
+**/node_modules
+
+# profiling files
+WeatherApp-frontend/chrome-profiler-events*.json
+WeatherApp-frontend/speed-measure-plugin*.json
+
+# IDEs and editors
+**/.idea
+WeatherApp-frontend/*.project
+WeatherApp-frontend/*.classpath
+WeatherApp-frontend/*.c9/
+WeatherApp-frontend/*.launch
+WeatherApp-frontend/*.settings/
+WeatherApp-frontend/*.sublime-workspace
+
+
+# misc
+**/.sass-cache
+**/connect.lock
+**/coverage
+**/libpeerconnection.log
+WeatherApp-frontend/npm-debug.log
+WeatherApp-frontend/yarn-error.log
+WeatherApp-frontend/testem.log
+**/typings
+
+# System Files
+.DS_Store
+Thumbs.db
+
+HELP.md
+**/target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+
+### IntelliJ IDEA ###
+WeatherApp_backend/.idea
+WeatherApp_backend/*.iws
+WeatherApp_backend/*.iml
+WeatherApp_backend/*.ipr
+

@@ -1,0 +1,20 @@
+<h1><span class="badge badge-secondary mt-3 ml-3">First</span> Here you can put country and city to check weather! </h1>
+<form class = "p-3" [formGroup]="weatherForm" (ngSubmit)="onSubmit()">
+  <div class="form-group" >
+    <label for="exampleInputCity">City</label>
+    <input type="text" class="form-control" id="exampleInputCity" aria-describedby="cityHelp" placeholder="Enter City" formControlName="city">
+    <small id="cityHelp" class="form-text text-muted">Please provide full city name in english language</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputCountry">Country</label>
+    <input type=text class="form-control" id="exampleInputCountry" aria-describedby="countryHelp" placeholder="Enter Country" formControlName="country">
+    <small id="countryHelp" class="form-text text-muted">Please provide abbreviation of country for example Finland = FI</small>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<hr>
+<h1 class = "p-3"><span class="badge badge-secondary mt-3">Second</span> Please click the button to get weather for location from browser </h1>
+<div>
+
+</div>
+<button type="submit" class="btn btn-primary btn-lg ml-3 " (click)="onClick()" >Click me to get weather from your browser location!</button>
